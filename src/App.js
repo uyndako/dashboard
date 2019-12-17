@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { PureComponent } from 'react';
 import './App.css';
+import { NavBar } from "../src/components/NavBar/index"
+import { BrowserRouter, Route } from "react-router-dom"
+import { dashboard } from "../src/components/NavBar/dashboard/index"
 
-function App() {
+class App extends PureComponent {
+  render () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Route path="/:id(|admindashboard)">
+      <NavBar />
+      <Route path="/admindashboard" component={dashboard} />
+      </Route>
+      </BrowserRouter>
     </div>
-  );
+  )
+}
 }
 
 export default App;
