@@ -1,0 +1,47 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1000px;
+  font-size: 14px;
+  margin-top: 15px;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  padding-left: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+th {
+  background: white;
+  }
+
+  .editable-input {
+    height: 38px;
+  }
+  .editable-textarea {
+    height: 120px;
+  }
+
+  .shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .appearance-none {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .editing:focus {
+    outline: solid 1px black;
+    background: #e0e0e0;
+    padding: 10px;
+  }
