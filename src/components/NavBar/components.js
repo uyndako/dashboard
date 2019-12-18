@@ -1,6 +1,7 @@
 import React from "react"
 import "../NavBar/style.css"
 import { Link } from "react-router-dom"
+import UpdateUserData from "./dashboard/update_user_data"
 
 export const NavHeader = () => {
   return (
@@ -63,18 +64,7 @@ export const MainContent = () => {
 				SUMMARY
 			</div>
       <div className="main">
-				<div className="widget">
-					<div className="title">User Data Analytics</div>
-					<div className="chart"></div>
-				</div>
-				<div className="widget">
-					<div className="title">Financial Data</div>
-					<div className="chart"></div>
-				</div>
-				<div className="widget">
-					<div className="title">Summary</div>
-					<div className="chart"></div>
-				</div>
+			 <UpdateUserData />
 			</div>
       </div>
   )

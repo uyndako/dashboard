@@ -202,7 +202,8 @@ body {
 /* main box container */
 .main {
 	display: flex;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 30px;
 }
 .widget {
 	flex-basis: 300px;
