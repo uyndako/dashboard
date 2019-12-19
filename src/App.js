@@ -11,7 +11,7 @@ class App extends PureComponent {
       <BrowserRouter>
       <Route path="/:id(|admindashboard)">
       <NavBar />
-      <Route path="/admindashboard" component={dashboard} />
+      <Route path="/" component={dashboard} />
       </Route>
       </BrowserRouter>
     </div>
