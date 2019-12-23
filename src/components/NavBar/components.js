@@ -29,10 +29,10 @@ export const SideNav = () => {
         <li className="active">
 						<Link to="#">
 							<span><i className="fa fa-bar-chart"></i></span>
-							<span>Analytics</span>
+							<span>Dictionary Words</span>
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link to="#">
 							<span><i className="fa fa-user"></i></span>
 							<span>Users</span>
@@ -50,7 +50,7 @@ export const SideNav = () => {
 							<span><i className="fa fa-credit-card-alt"></i></span>
 							<span>Payments</span>
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</div>
